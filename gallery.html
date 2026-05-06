@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NERUMMI — GALLERY</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav id="mainNav">
+  <a href="index.html" class="nav-logo">NERUMMI</a>
+  <div class="nav-right">
+    <button class="menu-toggle-btn" id="menuToggleBtn" aria-expanded="false" aria-label="Open menu">
+      <span class="ham-line"></span>
+      <span class="ham-line"></span>
+      <span class="ham-line"></span>
+    </button>
+  </div>
+</nav>
+
+<div id="navDropdown">
+  <ul class="nav-drop-list">
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="index.html#illustration">ILLUSTRATION</a></li>
+    <li><a href="index.html#model-arts">MODEL ARTS</a></li>
+    <li><a href="gallery.html">GALLERY</a></li>
+    <li><a href="index.html#vtuber">VTUBER</a></li>
+    <li><a href="index.html#about">ABOUT ME</a></li>
+    <li><a href="index.html#queue">QUEUE</a></li>
+  </ul>
+  <div class="nav-drop-divider"></div>
+  <div class="nav-drop-socials">
+    <a class="nav-drop-social nav-drop-social--twitch" href="https://www.twitch.tv/nerummi" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714z"/></svg>
+      TWITCH
+    </a>
+    <a class="nav-drop-social nav-drop-social--x" href="https://x.com/Nerummi" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      TWITTER
+    </a>
+    <a class="nav-drop-social nav-drop-social--vgen" href="https://vgen.co/Nerummi" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+      VGEN
+    </a>
+  </div>
+</div>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+<div class="stars" id="stars"></div>
+<div class="site-bg">
+  <div class="bg-orb bg-orb--1"></div>
+  <div class="bg-orb bg-orb--2"></div>
+  <div class="bg-orb bg-orb--3"></div>
+</div>
+<div class="deco-line deco-line-h"></div>
+<div class="deco-line deco-line-v"></div>
+
+<section id="gallery" class="section section--inner" style="padding-top: calc(var(--section-pad-top) + clamp(56px,7vw,68px));">
+  <div class="inner-wrap">
+
+    <header class="gallery-hero reveal-left">
+      <div class="gallery-hero-left">
+        <div class="gallery-hero-eyebrow">— MY PORTFOLIO</div>
+        <h2 class="gallery-hero-title">MY<br><em>WORKS</em></h2>
+        <p class="gallery-hero-sub">A curated collection of original illustrations, characters &amp; concepts</p>
+      </div>
+      <div class="gallery-hero-right">
+        <div class="gallery-count-ring">
+          <span class="gallery-count-num" id="heroCount">—</span>
+          <span class="gallery-count-lbl">ARTWORKS</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="filter-bar reveal" id="filterBar">
+      <button class="filter-btn active" data-filter="all">ALL</button>
+      <button class="filter-btn" data-filter="illustrations">ILLUSTRATIONS</button>
+      <button class="filter-btn" data-filter="characters">CHARACTERS</button>
+      <button class="filter-btn" data-filter="concepts">CONCEPTS</button>
+    </div>
+
+    <div class="gallery-sections" id="gallerySections">
+      <div class="gallery-cat-section" data-category="illustrations" id="secIllustrations">
+        <div class="cat-header reveal-left">
+          <div class="cat-header-arrow"><span class="arrow-chevron">›</span><div class="arrow-line"></div></div>
+          <h3 class="cat-title">ILLUSTRATIONS</h3>
+          <span class="cat-count" id="countIllustrations">0</span>
+        </div>
+        <div class="section-grid" id="gridIllustrations"></div>
+      </div>
+      <div class="gallery-cat-section" data-category="characters" id="secCharacters">
+        <div class="cat-header reveal-left">
+          <div class="cat-header-arrow"><span class="arrow-chevron">›</span><div class="arrow-line"></div></div>
+          <h3 class="cat-title">CHARACTERS</h3>
+          <span class="cat-count" id="countCharacters">0</span>
+        </div>
+        <div class="section-grid" id="gridCharacters"></div>
+      </div>
+      <div class="gallery-cat-section" data-category="concepts" id="secConcepts">
+        <div class="cat-header reveal-left">
+          <div class="cat-header-arrow"><span class="arrow-chevron">›</span><div class="arrow-line"></div></div>
+          <h3 class="cat-title">CONCEPTS</h3>
+          <span class="cat-count" id="countConcepts">0</span>
+        </div>
+        <div class="section-grid" id="gridConcepts"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" aria-modal="true" role="dialog" aria-label="Image viewer">
+  <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+      <line x1="1" y1="1" x2="13" y2="13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      <line x1="13" y1="1" x2="1" y2="13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    </svg>
+  </button>
+  <button class="lightbox-arrow lightbox-prev" id="lightboxPrev" aria-label="Previous">
+    <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><polyline points="14 4 7 11 14 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <button class="lightbox-arrow lightbox-next" id="lightboxNext" aria-label="Next">
+    <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><polyline points="8 4 15 11 8 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <div class="lightbox-inner">
+    <div class="lightbox-img-wrap">
+      <img class="lightbox-img" id="lightboxImg" src="" alt="" draggable="false">
+    </div>
+    <div class="lightbox-meta">
+      <span class="lightbox-label" id="lightboxLabel"></span>
+      <span class="lightbox-counter" id="lightboxCounter"></span>
+    </div>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
