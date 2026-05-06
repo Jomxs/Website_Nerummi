@@ -11,7 +11,6 @@
 </head>
 <body>
 
-<!-- ===================== NAV ===================== -->
 <nav id="mainNav">
   <a href="#home" class="nav-logo" data-scroll="home">NERUMMI</a>
   <div class="nav-right">
@@ -23,17 +22,16 @@
   </div>
 </nav>
 
-<!-- ===================== DROPDOWN ===================== -->
 <div id="navDropdown">
-  <ul class="nav-drop-list">
-    <li><a href="#home"          data-scroll="home">HOME</a></li>
-    <li><a href="#illustration"  data-scroll="illustration">ILLUSTRATION</a></li>
-    <li><a href="#model-arts"    data-scroll="model-arts">MODEL ARTS</a></li>
-    <li><a href="#gallery"       data-scroll="gallery">GALLERY</a></li>
-    <li><a href="#vtuber"        data-scroll="vtuber">VTUBER</a></li>
-    <li><a href="#about"         data-scroll="about">ABOUT ME</a></li>
-    <li><a href="#roadmap"       data-scroll="roadmap">ROADMAP</a></li>
-  </ul>
+<ul class="nav-drop-list">
+  <li><a href="#home" data-scroll="home">HOME</a></li>
+  <li><a href="#illustration" data-scroll="illustration">ILLUSTRATION</a></li>
+  <li><a href="#model-arts" data-scroll="model-arts">MODEL ARTS</a></li>
+  <li><a href="gallery.html">GALLERY</a></li>
+  <li><a href="#vtuber" data-scroll="vtuber">VTUBER</a></li>
+  <li><a href="#about" data-scroll="about">ABOUT ME</a></li>
+  <li><a href="#queue" data-scroll="queue">QUEUE</a></li>
+</ul>
   <div class="nav-drop-divider"></div>
   <div class="nav-drop-socials">
     <a class="nav-drop-social nav-drop-social--twitch" href="https://www.twitch.tv/nerummi" target="_blank" rel="noopener">
@@ -51,13 +49,8 @@
   </div>
 </div>
 
-<!-- ===================== SCROLL PROGRESS ===================== -->
 <div class="scroll-progress" id="scrollProgress"></div>
-
-<!-- ===================== STARS ===================== -->
 <div class="stars" id="stars"></div>
-
-<!-- ===================== BACKGROUND ===================== -->
 <div class="site-bg">
   <div class="bg-orb bg-orb--1"></div>
   <div class="bg-orb bg-orb--2"></div>
@@ -66,21 +59,12 @@
 <div class="deco-line deco-line-h"></div>
 <div class="deco-line deco-line-v"></div>
 
-<!-- ================================================================
-     SECTION 1 — HOME
-     ================================================================ -->
 <section id="home" class="section section--home">
   <div class="home-center">
     <div class="orb orb-ring"></div>
     <div class="orb orb-main"></div>
     <div class="orb orb-inner"></div>
-
-    <img class="char-image"
-         src="assets/Main_illustration.png"
-         alt="Nerummi character"
-         onerror="this.style.display='none'">
-
-    <!-- left menu -->
+    <img class="char-image" src="assets/Main_illustration.png" alt="Nerummi character" onerror="this.style.display='none'">
     <nav class="home-side-left">
       <a class="home-menu-item" href="#illustration" data-scroll="illustration">
         <img src="assets/Illustraion.png" alt="Illustration" onerror="this.style.display='none'">
@@ -95,19 +79,13 @@
         <span class="home-menu-label"></span>
       </a>
     </nav>
-
-    <!-- gallery cta -->
-    <a class="home-gallery-cta" href="#gallery" data-scroll="gallery">
-      <img src="assets/Gallery.png" alt="Gallery" onerror="this.style.display='none'">
-      <span class="home-gallery-label"></span>
-    </a>
-
-    <!-- nickname -->
+<a class="home-gallery-cta" href="gallery.html">
+  <img src="assets/Gallery.png" alt="Gallery" onerror="this.style.display='none'">
+  <span class="home-gallery-label"></span>
+</a>
     <div class="name-display">
       <img src="assets/Nickname.png" alt="Nerummi" onerror="this.style.display='none'">
     </div>
-
-    <!-- scroll indicator -->
     <div class="scroll-hint">
       <span class="scroll-hint-text">SCROLL</span>
       <div class="scroll-hint-line"></div>
@@ -115,73 +93,36 @@
   </div>
 </section>
 
-<!-- ================================================================
-     SECTION 2 — ILLUSTRATION
-     ================================================================ -->
 <section id="illustration" class="section section--inner">
   <div class="section-bg-accent section-bg-accent--coral"></div>
   <div class="inner-wrap">
 
-    <div class="page-header reveal">
-      <div class="page-header-eyebrow">— ORIGINAL ARTWORK</div>
-      <h2 class="page-header-title">ILLUSTRATION</h2>
-      <div class="page-header-line"></div>
-    </div>
-
-    <!-- Featured grid -->
-    <div class="featured-grid reveal">
-      <article class="ill-card featured-main ill-card--link" data-idx="0" tabindex="0" role="button" aria-label="View Art I">
-        <div class="ill-card-img-wrap">
-          <div class="ill-card-skeleton"></div>
-          <img class="ill-card-img" src="assets/art_1.webp" alt="Art I" loading="eager" decoding="async">
-          <div class="ill-card-shine"></div>
-        </div>
-        <div class="ill-card-overlay"><span class="ill-overlay-btn">VIEW</span></div>
-        <div class="featured-badge">FEATURED</div>
-        <div class="ill-card-footer">
-          <span class="ill-card-label">ART I</span>
-          <span class="ill-card-num">01</span>
-        </div>
-      </article>
-
-      <div class="featured-side">
-        <article class="ill-card featured-side-card ill-card--link" data-idx="1" tabindex="0" role="button" aria-label="View Art II">
-          <div class="ill-card-img-wrap">
-            <div class="ill-card-skeleton"></div>
-            <img class="ill-card-img" src="assets/art_2.webp" alt="Art II" loading="eager" decoding="async">
-            <div class="ill-card-shine"></div>
-          </div>
-          <div class="ill-card-overlay"><span class="ill-overlay-btn">VIEW</span></div>
-          <div class="ill-card-footer">
-            <span class="ill-card-label">ART II</span>
-            <span class="ill-card-num">02</span>
-          </div>
-        </article>
-        <article class="ill-card featured-side-card ill-card--link" data-idx="2" tabindex="0" role="button" aria-label="View Art III">
-          <div class="ill-card-img-wrap">
-            <div class="ill-card-skeleton"></div>
-            <img class="ill-card-img" src="assets/art_3.webp" alt="Art III" loading="lazy" decoding="async">
-            <div class="ill-card-shine"></div>
-          </div>
-          <div class="ill-card-overlay"><span class="ill-overlay-btn">VIEW</span></div>
-          <div class="ill-card-footer">
-            <span class="ill-card-label">ART III</span>
-            <span class="ill-card-num">03</span>
-          </div>
-        </article>
+    <div class="ill-hero reveal-left">
+      <div class="ill-hero-text">
+        <h2 class="ill-hero-title">ILLUSTRATION</h2>
       </div>
     </div>
 
-    <!-- Masonry collection -->
-    <div class="section-label reveal">
-      <div class="section-label-line"></div>
-      <span class="section-label-text">COLLECTION</span>
-      <div class="section-label-line"></div>
+<div class="ill-autoslide-section reveal">
+  <div class="ill-autoslide-wrapper">
+    <div class="ill-autoslide-track">
+      <img src="assets/art_1.webp" alt="Art I">
+      <img src="assets/art_2.webp" alt="Art II">
+      <img src="assets/art_3.webp" alt="Art III">
+      <img src="assets/art_4.webp" alt="Art IV">
+      <img src="assets/art_5.webp" alt="Art V">
+      <img src="assets/art_1.webp" alt="Art I">
+      <img src="assets/art_2.webp" alt="Art II">
+      <img src="assets/art_3.webp" alt="Art III">
+      <img src="assets/art_4.webp" alt="Art IV">
+      <img src="assets/art_5.webp" alt="Art V">
     </div>
-
-    <div class="ill-masonry reveal" id="illMasonry">
-      <!-- cards 4–10 injected by JS -->
-    </div>
+  </div>
+  <div class="ill-slide-actions">
+    <a href="gallery.html" class="ill-slide-btn">SEE MORE</a>
+    <a href="https://vgen.co/Nerummi" target="_blank" rel="noopener" class="ill-slide-btn ill-slide-btn--vgen">VGEN</a>
+  </div>
+</div>
 
     <div class="ill-marquee">
       <div class="ill-marquee-track">
@@ -199,157 +140,77 @@
   </div>
 </section>
 
-<!-- ================================================================
-     SECTION 3 — MODEL ARTS
-     ================================================================ -->
 <section id="model-arts" class="section section--inner">
   <div class="section-bg-accent section-bg-accent--lime"></div>
   <div class="inner-wrap">
-
-    <div class="page-header reveal">
+    <div class="page-header reveal-left">
       <div class="page-header-eyebrow">— VTUBER MODEL ILLUSTRATION</div>
       <h2 class="page-header-title">MODEL ART</h2>
       <div class="page-header-line"></div>
     </div>
-
-    <div class="model-layout">
-      <div class="model-text reveal">
-        <p class="model-desc">Crafting expressive, layered vtuber model illustrations with full rigging support. Every character is designed from the ground up with personality, expression packs, and technical precision for Live2D animation.</p>
-        <div class="model-features">
-          <div class="feature-item">
-            <div class="feature-num">01</div>
-            <div class="feature-text">
-              <h4>CHARACTER DESIGN</h4>
-              <p>Full original character concept from silhouette to final linework, tailored to your vision and brand.</p>
-            </div>
-          </div>
-          <div class="feature-item">
-            <div class="feature-num">02</div>
-            <div class="feature-text">
-              <h4>EXPRESSION PACK</h4>
-              <p>Range of expressions and emotion states, designed for seamless Live2D rigging workflow.</p>
-            </div>
-          </div>
-          <div class="feature-item">
-            <div class="feature-num">03</div>
-            <div class="feature-text">
-              <h4>LAYERED PSD</h4>
-              <p>Clean, organized layered files delivered ready for rigging with proper part separation.</p>
-            </div>
-          </div>
-          <div class="feature-item">
-            <div class="feature-num">04</div>
-            <div class="feature-text">
-              <h4>REVISIONS INCLUDED</h4>
-              <p>Collaborative process with multiple rounds of feedback to ensure the result is exactly right.</p>
-            </div>
-          </div>
-        </div>
+    <div class="comm-layout reveal">
+      <div class="comm-block">
+        <h3 class="comm-block-title">REQUIREMENTS</h3>
+        <ul class="comm-list">
+          <li>This service is for model art only</li>
+          <li>Reference image files of the model are required</li>
+          <li>No reference sheet available? That is okay but expect trial and error with design direction, resulting in extra revisions <strong>(+100 EUR)</strong></li>
+        </ul>
       </div>
-
-      <div class="model-showcase reveal">
-        <div class="model-card">
-          <div class="model-card-bg" style="background:linear-gradient(135deg,rgba(232,114,114,0.12),rgba(221,232,154,0.08));">
-            <span class="model-card-symbol">✦</span>
+      <div class="comm-block">
+        <h3 class="comm-block-title">WHAT IS INCLUDED</h3>
+        <ul class="comm-list">
+          <li>Full body model art</li>
+          <li>Ready-to-rig organized &amp; renamed PSD with detailed cutting</li>
+          <li>3 free expressions upset, blush, star eyes</li>
+          <li>Reference sheet matching the samples</li>
+          <li>Head guidelines &amp; angles for the rigger</li>
+        </ul>
+      </div>
+    </div>
+    <div class="comm-note reveal">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      <p>Rigging is <strong>not included</strong>. You receive 3 free revisions. Major design changes before final delivery (such as redesigning the character) may incur an additional fee at my discretion.</p>
+    </div>
+    <div class="comm-addons reveal">
+      <h3 class="comm-block-title">ADD-ONS</h3>
+      <div class="comm-addon-grid">
+        <div class="comm-addon-card">
+          <div class="addon-top">
+            <span class="addon-tag">EXPRESSION</span>
+            <span class="addon-price">FROM 10 EUR</span>
           </div>
-          <div class="model-card-label">CONCEPT SHEET</div>
+          <h4 class="addon-name">FACIAL EXPRESSION</h4>
+          <p class="addon-desc">Custom emotion states — blush, tears, and more, designed for seamless Live2D workflow</p>
         </div>
-        <div class="model-card">
-          <div class="model-card-bg" style="background:linear-gradient(135deg,rgba(143,168,50,0.12),rgba(232,114,114,0.06));">
-            <span class="model-card-symbol">◈</span>
+        <div class="comm-addon-card">
+          <div class="addon-top">
+            <span class="addon-tag">TOGGLE</span>
+            <span class="addon-price">FROM 50 EUR</span>
           </div>
-          <div class="model-card-label">EXPRESSION PACK</div>
-        </div>
-        <div class="model-card">
-          <div class="model-card-bg" style="background:linear-gradient(135deg,rgba(221,232,154,0.12),rgba(242,190,190,0.08));">
-            <span class="model-card-symbol">⬡</span>
-          </div>
-          <div class="model-card-label">LAYERED PSD</div>
+          <h4 class="addon-name">TOGGLE</h4>
+          <p class="addon-desc">Animated toggles such as waving hand, changing hairstyle, outfit swaps, and more</p>
         </div>
       </div>
     </div>
-
+    <div class="comm-cta reveal">
+      <a class="comm-cta-btn" href="https://vgen.co/Nerummi" target="_blank" rel="noopener">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        COMMISSION ON VGEN
+      </a>
+    </div>
   </div>
 </section>
-
-<!-- ================================================================
-     SECTION 4 — GALLERY
-     ================================================================ -->
-<section id="gallery" class="section section--inner">
-  <div class="inner-wrap">
-
-    <header class="gallery-hero reveal">
-      <div class="hero-content">
-        <h2 class="hero-title">
-          <span class="hero-title-word">MY</span>
-          <span class="hero-title-word hero-title-accent">WORKS</span>
-        </h2>
-        <p class="hero-subtitle">A COLLECTION OF MY ART</p>
-      </div>
-      <div class="hero-count-badge">
-        <span class="hero-count-num" id="heroCount">—</span>
-        <span class="hero-count-label">ARTWORKS</span>
-      </div>
-    </header>
-
-    <!-- Filter bar -->
-    <div class="filter-bar" id="filterBar">
-      <button class="filter-btn active" data-filter="all">ALL</button>
-      <button class="filter-btn" data-filter="illustrations">ILLUSTRATIONS</button>
-      <button class="filter-btn" data-filter="characters">CHARACTERS</button>
-      <button class="filter-btn" data-filter="concepts">CONCEPTS</button>
-    </div>
-
-    <!-- Category sections -->
-    <div class="gallery-sections" id="gallerySections">
-
-      <div class="gallery-cat-section reveal" data-category="illustrations" id="secIllustrations">
-        <div class="cat-header">
-          <div class="cat-header-arrow"><span class="arrow-chevron">›</span><div class="arrow-line"></div></div>
-          <h3 class="cat-title">ILLUSTRATIONS</h3>
-          <span class="cat-count" id="countIllustrations">0</span>
-        </div>
-        <div class="section-grid" id="gridIllustrations"></div>
-      </div>
-
-      <div class="gallery-cat-section reveal" data-category="characters" id="secCharacters">
-        <div class="cat-header">
-          <div class="cat-header-arrow"><span class="arrow-chevron">›</span><div class="arrow-line"></div></div>
-          <h3 class="cat-title">CHARACTERS</h3>
-          <span class="cat-count" id="countCharacters">0</span>
-        </div>
-        <div class="section-grid" id="gridCharacters"></div>
-      </div>
-
-      <div class="gallery-cat-section reveal" data-category="concepts" id="secConcepts">
-        <div class="cat-header">
-          <div class="cat-header-arrow"><span class="arrow-chevron">›</span><div class="arrow-line"></div></div>
-          <h3 class="cat-title">CONCEPTS</h3>
-          <span class="cat-count" id="countConcepts">0</span>
-        </div>
-        <div class="section-grid" id="gridConcepts"></div>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-<!-- ================================================================
-     SECTION 5 — VTUBER
-     ================================================================ -->
 <section id="vtuber" class="section section--inner">
   <div class="section-bg-accent section-bg-accent--coral"></div>
   <div class="inner-wrap">
-
-    <div class="page-header reveal">
+    <div class="page-header reveal-left">
       <div class="page-header-eyebrow">— VIRTUAL STREAMER</div>
       <h2 class="page-header-title">VTUBER</h2>
       <div class="page-header-line"></div>
     </div>
-
     <div class="vtuber-layout">
-      <div class="vtuber-text reveal">
+      <div class="vtuber-text reveal-left">
         <p class="big-quote">"Creating art, streaming live, building a world one illustration at a time."</p>
         <p>I stream my art process live on Twitch, Monday through Friday at 5PM CET. Every session is a chance to create something new — from character concepts to full illustrations — all done in real time with the community.</p>
         <p>Whether it's a new VTuber model, a character commission, or an experimental piece, every stream is a creative journey. Come hang out and watch art come to life!</p>
@@ -359,7 +220,6 @@
           <a class="vtuber-link" href="https://vgen.co/Nerummi" target="_blank" rel="noopener">VGEN</a>
         </div>
       </div>
-
       <div class="vtuber-stats reveal">
         <div class="stat-box">
           <span class="stat-num">∞</span>
@@ -379,19 +239,16 @@
         </div>
       </div>
     </div>
-
   </div>
 </section>
 
-<!-- ================================================================
-     SECTION 6 — ABOUT ME
-     ================================================================ -->
 <section id="about" class="section section--inner">
   <div class="inner-wrap">
-
     <div class="about-content">
-      <div class="about-left reveal">
+
+      <div class="about-left reveal-left">
         <div class="about-img-wrap">
+          <div class="about-gold-orb"></div>
           <div class="about-img-glow"></div>
           <img class="about-img" src="assets/Main_illustration.png" alt="Nerummi" onerror="this.style.display='none'">
         </div>
@@ -408,11 +265,21 @@
         <div class="about-eyebrow">— THE ARTIST</div>
         <h2 class="about-name">NERUMMI</h2>
         <div class="about-divider"></div>
-        <div class="about-eyebrow">— MY STORY</div>
-        <p class="about-bio">🌸 hai haii, I'm Neru! 🌸</p>
-        <p class="about-bio">VArtist · Illustrator · Animator</p>
-        <p class="about-bio">I stream my art on Twitch <strong>Mon–Fri 5PM CET</strong></p>
-        <p class="about-bio">Feel free to DM — commissions & collabs welcome!</p>
+        <p class="about-bio">Hiii nice to meet ya I'm Neru, I'm a Croatian artist who does illustrations, vtuber model art and I am learning rigging! I also enjoy streaming and singing while I work, which I broadcast on my Twitch — where I stream 5 times a week. Come say hi, I would really appreciate it!</p>
+        <div class="about-divider"></div>
+        <div class="twitch-embed-wrap">
+          <div class="twitch-embed-frame" id="twitchEmbedFrame"></div>
+          <div class="twitch-embed-footer">
+            <div class="twitch-embed-status" id="twitchEmbedStatus">
+              <span class="twitch-status-dot" id="twitchStatusDot"></span>
+              <span class="twitch-status-text" id="twitchStatusText">CHECKING...</span>
+            </div>
+            <a class="twitch-embed-cta" href="https://www.twitch.tv/nerummi" target="_blank" rel="noopener">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714z"/></svg>
+              OPEN ON TWITCH
+            </a>
+          </div>
+        </div>
         <div class="about-divider"></div>
         <div class="about-social-row">
           <a class="about-social-btn about-social-btn--twitch" href="https://www.twitch.tv/nerummi" target="_blank" rel="noopener">
@@ -429,116 +296,91 @@
           </a>
         </div>
       </div>
-    </div>
 
+    </div>
   </div>
 </section>
-
-<!-- ================================================================
-     SECTION 7 — ROADMAP
-     ================================================================ -->
-<section id="roadmap" class="section section--inner section--roadmap">
+<section id="queue" class="section section--inner section--queue">
   <div class="section-bg-accent section-bg-accent--lime"></div>
   <div class="inner-wrap">
-
-    <div class="page-header reveal">
+    <div class="page-header reveal-left">
       <div class="page-header-eyebrow">— IN PROGRESS</div>
-      <h2 class="page-header-title">ROADMAP</h2>
+      <h2 class="page-header-title">QUEUE</h2>
       <div class="page-header-line"></div>
     </div>
-
-    <div class="roadmap-board reveal" id="roadmapBoard">
-      <div class="roadmap-col">
-        <div class="roadmap-col-header">
-          <span class="roadmap-col-dot roadmap-col-dot--done"></span>
-          <span class="roadmap-col-title">DONE</span>
-        </div>
-        <div class="roadmap-cards">
-          <div class="roadmap-card">
-            <span class="roadmap-card-tag roadmap-card-tag--done">COMPLETE</span>
-            <p class="roadmap-card-text">Website v1.0 launch</p>
-          </div>
-          <div class="roadmap-card">
-            <span class="roadmap-card-tag roadmap-card-tag--done">COMPLETE</span>
-            <p class="roadmap-card-text">Live2D model rigged</p>
-          </div>
-          <div class="roadmap-card">
-            <span class="roadmap-card-tag roadmap-card-tag--done">COMPLETE</span>
-            <p class="roadmap-card-text">Gallery page with lightbox</p>
-          </div>
-          <div class="roadmap-card">
-            <span class="roadmap-card-tag roadmap-card-tag--done">COMPLETE</span>
-            <p class="roadmap-card-text">Commissions open on VGen</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="roadmap-col">
-        <div class="roadmap-col-header">
-          <span class="roadmap-col-dot roadmap-col-dot--progress"></span>
-          <span class="roadmap-col-title">IN PROGRESS</span>
-        </div>
-        <div class="roadmap-cards">
-          <div class="roadmap-card roadmap-card--active">
-            <span class="roadmap-card-tag roadmap-card-tag--progress">ACTIVE</span>
-            <p class="roadmap-card-text">New outfit design</p>
-          </div>
-          <div class="roadmap-card roadmap-card--active">
-            <span class="roadmap-card-tag roadmap-card-tag--progress">ACTIVE</span>
-            <p class="roadmap-card-text">Expression pack expansion</p>
-          </div>
-          <div class="roadmap-card roadmap-card--active">
-            <span class="roadmap-card-tag roadmap-card-tag--progress">ACTIVE</span>
-            <p class="roadmap-card-text">Stream overlay refresh</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="roadmap-col">
-        <div class="roadmap-col-header">
-          <span class="roadmap-col-dot roadmap-col-dot--planned"></span>
-          <span class="roadmap-col-title">PLANNED</span>
-        </div>
-        <div class="roadmap-cards">
-          <div class="roadmap-card">
-            <span class="roadmap-card-tag roadmap-card-tag--planned">SOON</span>
-            <p class="roadmap-card-text">YouTube channel launch</p>
-          </div>
-          <div class="roadmap-card">
-            <span class="roadmap-card-tag roadmap-card-tag--planned">SOON</span>
-            <p class="roadmap-card-text">Merch design exploration</p>
-          </div>
-          <div class="roadmap-card">
-            <span class="roadmap-card-tag roadmap-card-tag--planned">SOON</span>
-            <p class="roadmap-card-text">Animated shorts series</p>
-          </div>
-          <div class="roadmap-card">
-            <span class="roadmap-card-tag roadmap-card-tag--planned">SOON</span>
-            <p class="roadmap-card-text">Collaboration series</p>
-          </div>
-        </div>
+    <div class="trello-embed-wrap reveal">
+      <iframe
+        src="https://trello.com/b/bBRXjkaO.html"
+        frameborder="0"
+        allowfullscreen
+        title="Nerummi's Trello Board"
+        class="trello-embed-frame"
+      ></iframe>
+      <div class="trello-embed-footer">
+        <a class="trello-open-btn" href="https://trello.com/b/bBRXjkaO" target="_blank" rel="noopener">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M21 3H3a2 2 0 00-2 2v14a2 2 0 002 2h8v-2H3V7h18v2h2V5a2 2 0 00-2-2zm1 10h-4a1 1 0 00-1 1v7a1 1 0 001 1h4a1 1 0 001-1v-7a1 1 0 00-1-1zm-1 7h-2v-5h2v5zm-6-4H11a1 1 0 00-1 1v4a1 1 0 001 1h4a1 1 0 001-1v-4a1 1 0 00-1-1zm-1 4h-2v-2h2v2z"/></svg>
+          OPEN ON TRELLO
+        </a>
       </div>
     </div>
-
-    <!-- Footer -->
-    <footer class="site-footer reveal">
-      <div class="site-footer-line"></div>
-      <p class="site-footer-text">NERUMMI · ALL RIGHTS RESERVED</p>
-      <div class="site-footer-socials">
-        <a href="https://www.twitch.tv/nerummi" target="_blank" rel="noopener">TWITCH</a>
-        <span>·</span>
-        <a href="https://x.com/Nerummi" target="_blank" rel="noopener">TWITTER</a>
-        <span>·</span>
-        <a href="https://vgen.co/Nerummi" target="_blank" rel="noopener">VGEN</a>
-      </div>
-    </footer>
-
   </div>
 </section>
 
-<!-- ================================================================
-     LIGHTBOX
-     ================================================================ -->
+<footer class="site-footer">
+  <div class="footer-geo footer-geo--1"></div>
+  <div class="footer-geo footer-geo--2"></div>
+  <div class="footer-geo footer-geo--3"></div>
+  <div class="footer-geo footer-geo--4"></div>
+  <div class="footer-contact-section reveal">
+    <div class="footer-contact-header">
+      <div class="footer-contact-title-wrap">
+        <h2 class="footer-contact-title">Get in touch</h2>
+      </div>
+      <p class="footer-contact-desc">Do you like what you see? Would you like to collaborate on a project or commission something unique? Let me know and I'll get back to you as soon as possible!</p>
+    </div>
+    <form class="footer-form" id="footerForm" novalidate>
+      <div class="footer-form-row">
+        <input type="text" name="name" placeholder="NAME" class="footer-input" autocomplete="name">
+        <input type="email" name="email" placeholder="EMAIL" class="footer-input" autocomplete="email">
+      </div>
+      <textarea name="message" placeholder="WRITE A SHORT MESSAGE DETAILING YOUR INQUIRY." class="footer-textarea"></textarea>
+      <button type="submit" class="footer-submit">SUBMIT</button>
+    </form>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-bottom-inner">
+      <div class="footer-bottom-left">
+        <h3 class="footer-sitemap-title">Sitemap</h3>
+        <div class="footer-sitemap-links">
+          <a href="#home" data-scroll="home">HOME</a>
+          <a href="#illustration" data-scroll="illustration">ILLUSTRATION</a>
+          <a href="#model-arts" data-scroll="model-arts">MODEL ARTS</a>
+          <a href="gallery.html">GALLERY</a>
+          <a href="#vtuber" data-scroll="vtuber">VTUBER</a>
+          <a href="#about" data-scroll="about">ABOUT</a>
+          <a href="#queue" data-scroll="queue">QUEUE</a>
+        </div>
+      </div>
+      <div class="footer-bottom-right">
+        <div class="footer-socials">
+          <a class="footer-social-icon footer-social-icon--twitch" href="https://www.twitch.tv/nerummi" target="_blank" rel="noopener" aria-label="Twitch">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714z"/></svg>
+          </a>
+          <a class="footer-social-icon footer-social-icon--x" href="https://x.com/Nerummi" target="_blank" rel="noopener" aria-label="Twitter / X">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a class="footer-social-icon footer-social-icon--vgen" href="https://vgen.co/Nerummi" target="_blank" rel="noopener" aria-label="VGen">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </a>
+        </div>
+        <p class="footer-copy">COPYRIGHT ©2025 NERUMMI.<br>ALL RIGHTS RESERVED.</p>
+      </div>
+    </div>
+    <div class="footer-line"></div>
+    <p class="footer-credits">NERUMMI · ILLUSTRATOR · VTUBER · CHARACTER DESIGNER</p>
+  </div>
+</footer>
+
 <div class="lightbox" id="lightbox" aria-modal="true" role="dialog" aria-label="Image viewer">
   <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
   <button class="lightbox-close" id="lightboxClose" aria-label="Close">
@@ -548,14 +390,10 @@
     </svg>
   </button>
   <button class="lightbox-arrow lightbox-prev" id="lightboxPrev" aria-label="Previous">
-    <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-      <polyline points="14 4 7 11 14 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
+    <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><polyline points="14 4 7 11 14 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
   </button>
   <button class="lightbox-arrow lightbox-next" id="lightboxNext" aria-label="Next">
-    <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-      <polyline points="8 4 15 11 8 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
+    <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><polyline points="8 4 15 11 8 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
   </button>
   <div class="lightbox-inner">
     <div class="lightbox-img-wrap">
@@ -568,6 +406,48 @@
   </div>
 </div>
 
+<script>
+(function() {
+  var CHANNEL = 'nerummi';
+  var banner = document.getElementById('twitchLiveBanner');
+  var bannerTitle = document.getElementById('liveBannerTitle');
+  var statusDot = document.getElementById('twitchStatusDot');
+  var statusText = document.getElementById('twitchStatusText');
+  var embedFrame = document.getElementById('twitchEmbedFrame');
+  var parent = window.location.hostname || 'localhost';
+  var iframe = document.createElement('iframe');
+  iframe.id = 'twitchIframe';
+  iframe.src = 'https://player.twitch.tv/?channel=' + CHANNEL + '&parent=' + parent + '&autoplay=false&muted=true';
+  iframe.setAttribute('frameborder', '0');
+  iframe.setAttribute('allowfullscreen', '');
+  iframe.setAttribute('scrolling', 'no');
+  embedFrame.appendChild(iframe);
+  async function checkLive() {
+    try {
+      var r = await fetch('https://decapi.me/twitch/uptime/' + CHANNEL);
+      var text = await r.text();
+      var live = !text.includes('offline') && text.trim() !== '';
+      if (live) {
+        bannerTitle.textContent = 'nerummi is live on twitch!';
+        banner.style.display = 'block';
+        statusDot.className = 'twitch-status-dot twitch-status-dot--live';
+        statusText.className = 'twitch-status-text twitch-status-text--live';
+        statusText.textContent = 'LIVE NOW';
+      } else {
+        banner.style.display = 'none';
+        statusDot.className = 'twitch-status-dot twitch-status-dot--offline';
+        statusText.className = 'twitch-status-text';
+        statusText.textContent = 'OFFLINE';
+      }
+    } catch(e) {
+      banner.style.display = 'none';
+      statusText.textContent = 'OFFLINE';
+    }
+  }
+  checkLive();
+  setInterval(checkLive, 120000);
+})();
+</script>
 <script src="js/script.js"></script>
 </body>
 </html>
